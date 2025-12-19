@@ -1,0 +1,433 @@
+body{
+    background-color: #e0d9d9;
+    font-family: sans-serif; /*問老師1*/
+    margin: 0
+    
+}
+
+*{
+    cursor: url('https://i.ibb.co/v4FdLy1z/cur0.png'), auto;
+}
+
+/*header section------------------------*/
+
+.title img {
+    max-width: 15%;
+    height: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    padding: 10px 20px;
+    background-color: #332525; /*問老師2*/
+    box-shadow: 2px 2px 20px #121211;
+    color: white;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-basis: 60%;
+    /*border: #9d9b9b 2px solid;*/
+}
+
+.buttons {
+    display: flex;
+    gap: 40px;
+    flex-basis: 30%;
+
+   /*border: #9d9b9b 2px solid;*/
+}
+
+.buttons a{
+    color: white;
+    text-decoration: none;
+}
+
+.buttons a:hover{
+    opacity: 0.6; 
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+
+/*main visual section------------------------*/
+
+.visual {
+    width: 100%;
+    height: 95vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    justify-content: center; /*水平置中*/
+    align-items: center; /*垂直置中*/
+
+    background: black url(img/main_visual.jpg) no-repeat fixed 0 0/cover;
+}
+
+
+
+.visual .textarea {
+    display: grid;
+    margin-top: 60px;
+    text-align: center;
+    gap: 30px;
+}
+
+.logotype img{
+    max-width:70%;
+    height: auto;
+
+    filter: drop-shadow(0px 0px 10px #e4403870)
+}
+
+.gamelink {
+    margin:auto;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 40px;
+    /*padding: 15px;*/
+}
+
+.gamelink p:hover{
+    color: #e44038;
+    font-weight: bold;
+
+}
+
+/*content size set------------------------*/
+
+.content{
+    margin: 100px auto 0 auto;
+    width: 80%;
+    height: auto;
+}
+
+/*intro section------------------------*/
+
+.intro{
+    width: 100%;
+    height: auto;
+    text-align: center;  
+}
+
+i{
+    font-size: 1.4rem;
+}
+
+/*about section------------------------*/
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.about img{
+    width: 60%;
+    height: auto;
+    margin: 120px;
+}
+
+.about .textarea{
+    width: 100%;
+    height: auto;
+    text-align: justify;
+    margin: 100px 0 0;
+
+}
+
+.about .textarea .buttonarea{
+    width: 150px;
+    height: auto;
+    margin-top: 24px;
+    background-color: brown;
+    border-radius: 40px;
+
+    color: white;
+}
+
+.about .textarea .buttonarea .btn-item p{
+    text-align: center;
+    padding: 8px;
+}
+
+.btn-item :hover{
+    background-color: rgb(85, 35, 78);
+    border-radius: 40px;
+    color: #ffffff;
+    filter: drop-shadow(0px 0px 10px #ff12df7e);
+}
+
+/*character section------------------------*/
+
+.character{
+    width: 100%;
+    height: auto;
+    text-align: center; 
+    margin: 60px auto;
+}
+
+.character .title{ /*問老師3*/
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    color: #e9dd36;
+    filter: drop-shadow(0px 0px 5px #d21605ef);
+    font-size: 1rem;
+
+
+}
+
+.character .imgarea{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+.char-item img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.char-item img:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    filter: brightness(2);
+}
+
+.char-item h3{
+    margin-bottom: 5px;
+}
+
+.char-item p{
+    font-size: 0.9rem;
+    margin-top: 0;
+}
+
+/*game section------------------------*/
+
+.game{
+    width: 100%;
+    height: 600px;
+    text-align: center; 
+    margin: 100px 0 0 0;
+    overflow: hidden;
+}
+
+.game .title{
+    justify-content: center;
+    color: #e9dd36;
+    filter: drop-shadow(0px 0px 5px #d21605ef);
+    font-size: 1rem;
+}
+
+.game .gamelist{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+
+    background: black url(img/fnaf1_menu.jpg) no-repeat scroll top/contain;
+    transition: all 0.1s ease-in-out;
+}
+
+.game .gamelist .buttonarea{
+    width: 70%;
+    height: auto;
+    margin-left: 48px;
+    gap: 20px;
+    color: #fff;
+}
+
+.game .gamelist .btn-item p{
+    width: fit-content;
+    height: auto;
+    background-color: rgba(0,0,0,0);
+    border-radius: 40px;
+    margin: 30px 0 0 0;
+
+    text-align: left;
+    letter-spacing: 8px;
+    font-size: 1.4rem;
+
+    opacity: 0.5;
+    
+}
+
+.game .gamelist .btn-item p:hover{
+    color: #ff99e9;
+    font-weight: bold;
+    opacity: 1;
+}
+
+.gamelist:has(.x2 p:hover) {
+    transition: all 0.1s ease-in-out;
+    background: black url(img/fnaf2_menu.jpg) no-repeat scroll top/contain;
+}
+
+.gamelist:has(.x3 p:hover) {
+    transition: all 0.1s ease-in-out;
+    background: black url(img/fnaf3_menu.jpg) no-repeat scroll top/contain;
+}
+
+.gamelist .textarea{
+    width: 100%;
+    height: auto;
+    margin: 120px 0 48px;
+    text-align: justify;
+    color: #c3c3c3;
+    font-size: 1em;
+    line-height: 1.6rem;
+}
+
+/*footer section------------------------*/
+
+.footer{
+    height: 88px;
+    margin: 10% 0 0 0;
+    padding: 56px;
+    background-color: #652828;
+    color: white;
+
+    text-align: center;
+}
+
+.y1 p{
+    font-size: 1rem;
+    color: #dca7a7;
+    margin-bottom: 40px;
+}
+
+.y2 p{
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+
+/*ABOUT----------------------------------------*/
+
+.abouttitle h1{
+    margin: 128px 0 56px 0;
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.about-item img{
+    width: 700px;
+    height: auto;
+    aspect-ratio: 5/3;
+    object-fit: cover;
+}
+
+.about-item p{
+    width: 100%;
+    height: fit-content;
+    text-align: justify;
+}
+
+.introduction{
+    justify-content: center;
+    gap: 20px;
+    row-gap: 80px;
+    display: grid;
+    grid-template-areas:
+        "a b"
+        "d c"
+}
+
+.z1{
+    grid-area: a;
+}
+
+.z2{
+    height: fit-content;
+    margin: auto 0;
+    grid-area: b;
+}
+
+.z3{
+    grid-area: c;
+}
+
+.z4{
+    height: fit-content;
+    margin: auto 0;
+    grid-area: d;
+}
+
+.trailer{
+    display: flex;
+    justify-content: center; /*水平置中*/
+    align-items: center;
+    margin-top: 136px;
+}
+
+/*CHARACTERS----------------------------------------*/
+
+.chartitle h1{
+    margin: 128px 0 56px 0;
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.char-info img{
+    display: block;
+    margin: 0 auto;
+    aspect-ratio: 1;
+    max-width: 400px;
+}
+
+.char-info .chardesc{
+    margin: auto;
+    text-align: center;
+}
+
+.char-info .chardesc h2{
+    margin-bottom: 0px;
+}
+
+.char-info .chardesc .info p{
+    padding: 0 280px;
+    text-align: justify;
+    margin-bottom: 120px;
+}
+
+
+/*JUMPSCARE----------------------------------------*/
+
+.vid{
+    width: 100%;
+    height: auto;
+    background-color: #121211;
+}
+
+
+.top img{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    max-width: 4%;
+    height: auto;
+}
+
+/*問老師統計: 3 個問題*/
+/*
+1. font-family: serif; 只有部分有用?
+2. background-color: #332525; 標題字會蓋過去 background?
+3. video直接點連結失靈
+*/
