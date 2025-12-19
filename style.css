@@ -29,6 +29,7 @@ body{
 
     padding: 10px 20px;
     background-color: #332525; /*問老師2*/
+    z-index: 9999;
     box-shadow: 2px 2px 20px #121211;
     color: white;
 }
@@ -431,3 +432,4 @@ i{
 2. background-color: #332525; 標題字會蓋過去 background?
 3. video直接點連結失靈
 */
+
