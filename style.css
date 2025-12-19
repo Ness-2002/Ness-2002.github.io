@@ -1,12 +1,31 @@
-body{
+body {
     background-color: #e0d9d9;
-    font-family: sans-serif; 
+    font-family: sans-serif;
     margin: 0
-    
 }
 
-*{
+* {
     cursor: url('https://i.ibb.co/v4FdLy1z/cur0.png'), auto;
+}
+
+.img-bg {
+    width: 50%;
+    justify-self: center;
+    position: fixed;
+
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.05;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /*header section------------------------*/
@@ -28,7 +47,7 @@ body{
     width: 100%;
 
     padding: 10px 20px;
-    background-color: #332525; 
+    background-color: #332525;
     z-index: 9999;
     box-shadow: 2px 2px 20px #121211;
     color: white;
@@ -47,19 +66,19 @@ body{
     gap: 40px;
     flex-basis: 30%;
 
-   /*border: #9d9b9b 2px solid;*/
+    /*border: #9d9b9b 2px solid;*/
 }
 
-.buttons a{
+.buttons a {
     color: white;
     text-decoration: none;
 }
 
-.buttons a:hover{
-    opacity: 0.6; 
+.buttons a:hover {
+    opacity: 0.6;
 }
 
-h1{
+h1 {
     font-size: 1.5rem;
 }
 
@@ -72,8 +91,10 @@ h1{
 
     display: grid;
     grid-template-columns: 1fr 1.6fr;
-    justify-content: center; /*水平置中*/
-    align-items: center; /*垂直置中*/
+    justify-content: center;
+    /*水平置中*/
+    align-items: center;
+    /*垂直置中*/
 
     background: black url(img/main_visual.jpg) no-repeat fixed 0 0/cover;
 }
@@ -87,22 +108,22 @@ h1{
     gap: 30px;
 }
 
-.logotype img{
-    max-width:70%;
+.logotype img {
+    max-width: 70%;
     height: auto;
 
     filter: drop-shadow(0px 0px 10px #e4403870)
 }
 
 .gamelink {
-    margin:auto;
+    margin: auto;
     width: 200px;
     background-color: #fff;
     border-radius: 40px;
     /*padding: 15px;*/
 }
 
-.gamelink p:hover{
+.gamelink p:hover {
     color: #e44038;
     font-weight: bold;
 
@@ -110,7 +131,7 @@ h1{
 
 /*content size set------------------------*/
 
-.content{
+.content {
     margin: 100px auto 0 auto;
     width: 80%;
     height: auto;
@@ -118,30 +139,30 @@ h1{
 
 /*intro section------------------------*/
 
-.intro{
+.intro {
     width: 100%;
     height: auto;
-    text-align: center;  
+    text-align: center;
 }
 
-i{
+i {
     font-size: 1.4rem;
 }
 
 /*about section------------------------*/
 
-.about{
+.about {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 
-.about img{
+.about img {
     width: 60%;
     height: auto;
     margin: 120px;
 }
 
-.about .textarea{
+.about .textarea {
     width: 100%;
     height: auto;
     text-align: justify;
@@ -149,7 +170,7 @@ i{
 
 }
 
-.about .textarea .buttonarea{
+.about .textarea .buttonarea {
     width: 150px;
     height: auto;
     margin-top: 24px;
@@ -159,12 +180,12 @@ i{
     color: white;
 }
 
-.about .textarea .buttonarea .btn-item p{
+.about .textarea .buttonarea .btn-item p {
     text-align: center;
     padding: 8px;
 }
 
-.btn-item :hover{
+.btn-item :hover {
     background-color: rgb(85, 35, 78);
     border-radius: 40px;
     color: #ffffff;
@@ -173,71 +194,71 @@ i{
 
 /*character section------------------------*/
 
-.character{
+.character {
     width: 100%;
     height: auto;
-    text-align: center; 
+    text-align: center;
     margin: 60px auto;
 }
 
-.character .title{ 
+.character .title {
     width: 100%;
     height: auto;
     justify-content: center;
     color: #e9dd36;
-    filter: drop-shadow(0px 0px 5px #d21605ef);
+    filter: drop-shadow(0px 0px 5px #d21605);
     font-size: 1rem;
 
 
 }
 
-.character .imgarea{
+.character .imgarea {
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 
-.char-item img{
+.char-item img {
     width: 100%;
     height: auto;
     aspect-ratio: 1;
     object-fit: cover;
 }
 
-.char-item img:hover{
+.char-item img:hover {
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
     filter: brightness(2);
 }
 
-.char-item h3{
+.char-item h3 {
     margin-bottom: 5px;
 }
 
-.char-item p{
+.char-item p {
     font-size: 0.9rem;
     margin-top: 0;
 }
 
 /*game section------------------------*/
 
-.game{
+.game {
     width: 100%;
     height: 600px;
-    text-align: center; 
+    text-align: center;
     margin: 100px 0 0 0;
     overflow: hidden;
 }
 
-.game .title{
+.game .title {
     justify-content: center;
     color: #e9dd36;
-    filter: drop-shadow(0px 0px 5px #d21605ef);
+    filter: drop-shadow(0px 0px 5px #d21605);
     font-size: 1rem;
 }
 
-.game .gamelist{
+.game .gamelist {
     width: 100%;
     height: 100vh;
     display: grid;
@@ -247,7 +268,7 @@ i{
     transition: all 0.1s ease-in-out;
 }
 
-.game .gamelist .buttonarea{
+.game .gamelist .buttonarea {
     width: 70%;
     height: auto;
     margin-left: 48px;
@@ -255,10 +276,10 @@ i{
     color: #fff;
 }
 
-.game .gamelist .btn-item p{
+.game .gamelist .btn-item p {
     width: fit-content;
     height: auto;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     border-radius: 40px;
     margin: 30px 0 0 0;
 
@@ -267,10 +288,10 @@ i{
     font-size: 1.4rem;
 
     opacity: 0.5;
-    
+
 }
 
-.game .gamelist .btn-item p:hover{
+.game .gamelist .btn-item p:hover {
     color: #ff99e9;
     font-weight: bold;
     opacity: 1;
@@ -286,7 +307,7 @@ i{
     background: black url(img/fnaf3_menu.jpg) no-repeat scroll top/contain;
 }
 
-.gamelist .textarea{
+.gamelist .textarea {
     width: 100%;
     height: auto;
     margin: 120px 0 48px;
@@ -298,7 +319,7 @@ i{
 
 /*footer section------------------------*/
 
-.footer{
+.footer {
     height: 88px;
     margin: 10% 0 0 0;
     padding: 56px;
@@ -308,13 +329,13 @@ i{
     text-align: center;
 }
 
-.y1 p{
+.y1 p {
     font-size: 1rem;
     color: #dca7a7;
     margin-bottom: 40px;
 }
 
-.y2 p{
+.y2 p {
     font-size: 0.8rem;
     opacity: 0.7;
 }
@@ -322,26 +343,26 @@ i{
 
 /*ABOUT----------------------------------------*/
 
-.abouttitle h1{
+.abouttitle h1 {
     margin: 128px 0 56px 0;
     text-align: center;
     font-size: 2.2rem;
 }
 
-.about-item img{
+.about-item img {
     width: 700px;
     height: auto;
     aspect-ratio: 5/3;
     object-fit: cover;
 }
 
-.about-item p{
+.about-item p {
     width: 100%;
     height: fit-content;
     text-align: justify;
 }
 
-.introduction{
+.introduction {
     justify-content: center;
     gap: 20px;
     row-gap: 80px;
@@ -351,58 +372,59 @@ i{
         "d c"
 }
 
-.z1{
+.z1 {
     grid-area: a;
 }
 
-.z2{
+.z2 {
     height: fit-content;
     margin: auto 0;
     grid-area: b;
 }
 
-.z3{
+.z3 {
     grid-area: c;
 }
 
-.z4{
+.z4 {
     height: fit-content;
     margin: auto 0;
     grid-area: d;
 }
 
-.trailer{
+.trailer {
     display: flex;
-    justify-content: center; /*水平置中*/
+    justify-content: center;
+    /*水平置中*/
     align-items: center;
     margin-top: 136px;
 }
 
 /*CHARACTERS----------------------------------------*/
 
-.chartitle h1{
+.chartitle h1 {
     margin: 128px 0 56px 0;
     text-align: center;
     font-size: 2.2rem;
 }
 
-.char-info img{
+.char-info img {
     display: block;
     margin: 0 auto;
     aspect-ratio: 1;
     max-width: 400px;
 }
 
-.char-info .chardesc{
+.char-info .chardesc {
     margin: auto;
     text-align: center;
 }
 
-.char-info .chardesc h2{
+.char-info .chardesc h2 {
     margin-bottom: 0px;
 }
 
-.char-info .chardesc .info p{
+.char-info .chardesc .info p {
     padding: 0 280px;
     text-align: justify;
     margin-bottom: 120px;
@@ -411,19 +433,17 @@ i{
 
 /*JUMPSCARE----------------------------------------*/
 
-.vid{
+.vid {
     width: 100%;
     height: auto;
     background-color: #121211;
 }
 
 
-.top img{
+.top img {
     position: fixed;
     right: 30px;
     bottom: 30px;
     max-width: 4%;
     height: auto;
 }
-
-
