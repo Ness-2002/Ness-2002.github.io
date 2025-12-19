@@ -1,6 +1,6 @@
 body{
     background-color: #e0d9d9;
-    font-family: sans-serif; /*問老師1*/
+    font-family: sans-serif; 
     margin: 0
     
 }
@@ -28,7 +28,7 @@ body{
     width: 100%;
 
     padding: 10px 20px;
-    background-color: #332525; /*問老師2*/
+    background-color: #332525; 
     z-index: 9999;
     box-shadow: 2px 2px 20px #121211;
     color: white;
@@ -180,7 +180,7 @@ i{
     margin: 60px auto;
 }
 
-.character .title{ /*問老師3*/
+.character .title{ 
     width: 100%;
     height: auto;
     justify-content: center;
@@ -426,10 +426,4 @@ i{
     height: auto;
 }
 
-/*問老師統計: 3 個問題*/
-/*
-1. font-family: serif; 只有部分有用?
-2. background-color: #332525; 標題字會蓋過去 background?
-3. video直接點連結失靈
-*/
 
